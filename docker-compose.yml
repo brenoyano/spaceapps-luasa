@@ -1,0 +1,35 @@
+version: "3.2"
+
+services:
+  application:
+    build: .
+    command: bash -c "python3 create_schemas.py && python3 app.py"
+    ports: 
+      - "5000:5000"
+    networks:
+      - postgres
+    depends_on:
+      - postgres
+  
+  postgres:
+    container_name: luasa
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      PGDATA: /data/postgres
+    volumes:
+       - postgres:/data/postgres
+    ports:
+      - "5450:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+    postgres:
+  
