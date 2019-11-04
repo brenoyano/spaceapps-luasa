@@ -22,6 +22,7 @@ A aplicação foi desenvolvida se utilizando python e usando o framework Flask-R
 #### Para utiliza-lo, clone o repositório;
 #### Tenha o Docker e o docker-compose instalado;
 #### Na pasta do repositório, rode o comando em um terminal:
-####   docker-compose up -d
-#### Com a aplicação rodando entre em localhost:5000
+```docker-compose up -d```
+#### Com a aplicação rodando entre em: 
+<a href="http://localhost:5000">localhost:5000<a>
 #### Para testar o AR clique em Teste a Luasa.
