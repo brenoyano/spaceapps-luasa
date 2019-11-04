@@ -7,7 +7,7 @@ Nós pensamos em uma solução que nos permitisse educar as futuras gerações p
 
 Por isso a ideia foi de usar realidade aumentada para educar as futuras gerações através de uma ficha que as crianças receberiam nas escolas e através de um web app que pode ser utilizado em qualquer celular, seria possível as crianças e educadores interagirem com a lua.
 
-## Técnologia utilizada
+## Tecnologia utilizada
 
 A aplicação foi desenvolvida se utilizando python e usando o framework Flask-Restful para o backend, onde a aplicação ao final foi containerizada usando o docker, já a parte da realidade aumentada, foi utilizado o código do <a href="https://github.com/jeromeetienne/ar.js">jeromeetienne<a> para se gerar a lua, usando a sua biblioteca AR.js;
 
